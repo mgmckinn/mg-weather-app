@@ -8,33 +8,40 @@
     <title>WeatherApp</title>
 </head>
 <body>
-    <div class="container">
-        <div class="current-weather">
-            
-            <div class="date-wrapper">
-                <div class="time" id="time">
-                    12:30 <span id="am-pm"></span>
-                </div>
-                </div class="date" id="date">
-                    Saturday, January 15 
-                </div>
-                    <div class="additional" id="current-weather-items">
-                        <div class="weather-item">
-                            <p>Humidity</p>
-                            <p>39. 3%</p>
-                        </div>  
-                        <div class="weather-item">
-                                <p>Pressure</p>
-                                <p>80</p>
-                        </div>  
-                        <div class="weather-item">
-                            <p>Wind Speed</p>
-                            <p>123</p>
-                        </div>
-                    </div>  
-            </div>
-        </div>
-    </div>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>WeatherApp</title>
+</head>
+<body>
+  <div class="space-x-20 weather-container">
+     <div id="weather-section" class="flex flex-column justify-content-center mb-3">
+
+       <div class="search-wrapper border-bottom m-auto my-10">
+         <h2 class="text-center text-[#8a3080] mb-4 text-lg">Search for a City:</h2>
+         <!--search entry-->
+         <form id="search-form">
+           <input name="searchterm" id="searchterm" type="text" autofocus="true" placeholder="San Diego"
+             class="capitalize border-double border-4 border-[#8a307f] p-3"/>
+           <button id="submit-button" class="btn-right" type="submit" >Search</button>
+          
+         </form>
+       </div>
+       <!--search results; dynamically generated results will go here-->
+       <div id="weather-results">
+         
+       </div>
+       
+
+     </div>
+
+   
+</body>
+</html>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
